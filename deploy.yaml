@@ -14,8 +14,9 @@ spec:
     spec:
       containers:
       - name: queue
-        image: ${REPOSITORY_TAG}
-        imagePullPolicy: Never
+        #image: ${REPOSITORY_TAG}
+        image: richardchesterwood/k8s-fleetman-queue:release2
+        #imagePullPolicy: Never
 ---
 apiVersion: v1
 kind: Service
